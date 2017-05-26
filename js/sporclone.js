@@ -56,7 +56,7 @@ function start()
 
 
         // p.
-        time_remaining = 300
+        time_remaining = 300;
         timer = setInterval(tick, 1000);
 
 
