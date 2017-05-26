@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: European Countries</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["Albania", "Andorra", "Armenia", "Austria",
+               "Azerbaijan", "Belarus", "Belgium", "Bosnia and Herzegovina | Bosnia",
+               "Bulgaria", "Croatia", "Czech Republic", "Denmark",
+               "Estonia", "Finland", "France", "Georgia",
+               "Germany", "Greece", "Hungary", "Iceland",
+               "Ireland", "Italy", "Kosovo", "Latvia",
+               "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia",
+               "Malta",  "Moldova", "Monaco", "Montenegro",
+               "Netherlands", "Norway", "Poland", "Portugal",
+               "Romania", "San Marino", "Serbia", "Slovakia",
+                "Slovenia", "Spain", "Sweden", "Switzerland",
+                "Turkey", "Ukraine", "United Kingdom", "Vatican City"];
+
+// d.
+var time_limit = 300; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+
+<body onload="setup()" value="Set Up">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="#">Puzzle Name</a></li>
+            <li><a href="#">Puzzle Name</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="europe.jpg" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Name all the countries in Europe.</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" onclick="start()" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter country:</h3>
+
+            <!-- k.  -->
+            <input id="guess" onkeyup="check()" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time">5:00</span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><span id="answer0"></span></td>
+        <td><span id="answer1"></span></td>
+        <td><span id="answer2"></span></td>
+        <td><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer4"></span></td>
+        <td><span id="answer5"></span></td>
+        <td><span id="answer6"></span></td>
+        <td><span id="answer7"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer8"></span></td>
+        <td><span id="answer9"></span></td>
+        <td><span id="answer10"></span></td>
+        <td><span id="answer11"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer12"></span></td>
+        <td><span id="answer13"></span></td>
+        <td><span id="answer14"></span></td>
+        <td><span id="answer15"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer16"></span></td>
+        <td><span id="answer17"></span></td>
+        <td><span id="answer18"></span></td>
+        <td><span id="answer19"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer20"></span></td>
+        <td><span id="answer21"></span></td>
+        <td><span id="answer22"></span></td>
+        <td><span id="answer23"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer24"></span></td>
+        <td><span id="answer25"></span></td>
+        <td><span id="answer26"></span></td>
+        <td><span id="answer27"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer28"></span></td>
+        <td><span id="answer29"></span></td>
+        <td><span id="answer30"></span></td>
+        <td><span id="answer31"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer32"></span></td>
+        <td><span id="answer33"></span></td>
+        <td><span id="answer34"></span></td>
+        <td><span id="answer35"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer36"></span></td>
+        <td><span id="answer37"></span></td>
+        <td><span id="answer38"></span></td>
+        <td><span id="answer39"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer40"></span></td>
+        <td><span id="answer41"></span></td>
+        <td><span id="answer42"></span></td>
+        <td><span id="answer43"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer44"></span></td>
+        <td><span id="answer45"></span></td>
+        <td><span id="answer46"></span></td>
+        <td><span id="answer47"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Abby W</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
